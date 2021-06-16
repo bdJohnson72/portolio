@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #777;
+    padding: 2rem;
+}
+
+
+
+.main-header{
+    background: url("../img/laptop1.jpg");
+    height: 95vh;
+    background-size: cover;
+    background-position: top;
+}
+.title-message{
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hide{
+    display: none;
+    transition: .2s;
+    animation-timing-function: ease-in-out;
+}
+

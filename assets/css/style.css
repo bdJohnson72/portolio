@@ -1,3 +1,7 @@
+root{
+   --midnight-blue: rgb(20, 13, 79);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +13,8 @@ body{
     font-size: 1rem;
     line-height: 1.5;
     color: #777;
-    padding: 2rem;
+    background-color: var(--midnight-blue);
+    padding: 1rem;
 }
 
 

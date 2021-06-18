@@ -42,7 +42,6 @@ body{
     position: absolute;
     right: 0;
 
-
 }
 .nav-bar{
     display: grid;
@@ -60,6 +59,19 @@ body{
     text-decoration: none;
 }
 
+.nav-bar span{
+    display: block;
+    color: #141313;
+    font-size: 2rem;
+}
+
+.nav-blog:hover +.hide{
+    color: red;
+    display: block;
+}
+
+
+
 .nav-blog{
     grid-area: nav1;
 }
@@ -71,10 +83,11 @@ body{
     grid-area: nav3;
 }
 
-.nav-bar a:hover{
-    cursor: pointer;
-    color: var(--pale-blue);
+.hide{
+    display: none;
 }
+
+
 #menu-wrapper{
     background-color: var(--midnight-blue);
     grid-column: 1 / -1;

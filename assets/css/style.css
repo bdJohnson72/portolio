@@ -1,3 +1,5 @@
+@import url(donut.css);
+
 :root{
     --midnight-blue: rgb(16, 55, 131);
     --cornflower-blue: #023E8A;
@@ -26,7 +28,7 @@ body{
     font-size: 1rem;
     line-height: 1.5;
     color: #141313;
-    padding: 2rem;
+    
     box-sizing: border-box;
 }
 .menu-icon{
@@ -38,12 +40,14 @@ body{
 }
 
 .nav-bar{
+    position: fixed;
     display: grid;
     grid-template-areas: "empty nav1 nav2 nav3";
     background-color: var(--cornflower-blue);
     grid-column: 1 / 1;
     width: 100vw;
     height: 3rem;
+    z-index: 1;
 }
 
 .nav-bar a {
@@ -273,7 +277,8 @@ and (max-width: 700px){
     color:  var(--midnight-blue);
     margin: 0 0 2rem 0;
 }
-.skills-card{
+.skills-card{   
+    position: relative; 
     outline: 1px solid var(--pale-blue);
     width: 20rem;
     min-height: 20rem;
@@ -281,10 +286,17 @@ and (max-width: 700px){
     background-color: var(--powder-blue);
     box-shadow: 5px 5px gray;
 }
+
+.skills-card h2{
+    text-align: center;
+    font-weight: 800;
+}
 .skills-card img{
+    position: absolute;
     display: block;
-    padding: 1rem 0;
-    justify-content: start;
+    left: 40%;
+    top: 25%;   
+    padding: 1rem 0;   
     max-width: 5rem;
 }
 

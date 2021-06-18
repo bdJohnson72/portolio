@@ -36,13 +36,7 @@ body{
     right: 10px;
     display: block;
 }
-.nav-menu{
-    justify-content: space-between;
-    padding: 0 1.5rem;
-    position: absolute;
-    right: 0;
 
-}
 .nav-bar{
     display: grid;
     grid-template-areas: "empty nav1 nav2 nav3";
@@ -59,14 +53,26 @@ body{
     text-decoration: none;
 }
 
-.nav-bar span{
+.nav-subject{
     display: block;
     color: #141313;
+    font-weight: 700;
     font-size: 2rem;
 }
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
 
-.nav-blog:hover +.hide{
-    color: red;
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 10rem;
+    z-index: 1;
+    background-color: var(--pale-blue)
+}
+
+.dropdown:hover .dropdown-content{
     display: block;
 }
 
@@ -304,3 +310,9 @@ and (max-width: 700px){
     grid-area: vue;
 }
 
+footer{
+    background-color: var(--pale-blue);
+    grid-column: 1 / -1;
+    min-height: 10rem;
+    margin: 2rem 0 0 0;
+}

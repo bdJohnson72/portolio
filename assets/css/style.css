@@ -2,7 +2,7 @@
     --midnight-blue: rgb(16, 55, 131);
     --cornflower-blue: #023E8A;
     --pale-blue: rgb(155, 175, 217);
-    --power-blue: #CAF0F8
+    --powder-blue: #CAF0F8
 }
 
 
@@ -278,7 +278,7 @@ and (max-width: 700px){
     width: 20rem;
     min-height: 20rem;
     border-radius: 3px;
-    background-color: var(--power-blue);
+    background-color: var(--powder-blue);
     box-shadow: 5px 5px gray;
 }
 .skills-card img{

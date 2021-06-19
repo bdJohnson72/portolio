@@ -255,8 +255,7 @@ a:visited{
 
 footer{
     background-color: var(--pale-blue);
-    grid-column: 1 / -1;
-    min-height: 10rem;
+    grid-column: 1 / -1;    
     margin: 2rem 0 0 0;
 }
 
@@ -269,9 +268,42 @@ footer{
 }
 
 #youtubeButton a{
-    color:black
+    color:black;
 }
 
+.footer{
+    background-color: var(--powder-blue);   
+    font-size: 1.5rem;
+    display: grid;
+    gap: 1.5rem .5rem;
+    grid-template-columns: repeat(auto-fill, min-max(100px, 1fr));
+    padding: 2rem 0 0 2rem;
+}
+.linkedIn{
+   grid-row: 1;
+   grid-column: 1;
+}
+.linkedIn a{
+    color: black;
+}
+
+.twitter{
+    grid-row: 1;
+    grid-column: 3;
+}
+.twitter a {
+    color: black;
+}   
+
+
+.youtube{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.youtube a {
+    color: black;
+}
 @media only  screen and (min-width: 375px)
 and (max-width: 700px){
 
@@ -303,8 +335,7 @@ and (max-width: 700px){
         animation: moveInRight 1s ease-out;
     }
 
-    .intro-text {
-        background-color: red;
+    .intro-text {        
         font-size: 1.5rem;
         grid-column: 1 / -1;
     }

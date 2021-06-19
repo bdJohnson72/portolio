@@ -52,22 +52,17 @@ echo "hello";?>
         <a id="aboutme"></a>
         <div class="about">
             <img src="assets/img/headhsot.jpg" alt="my-pic">
-            <div class="intro-text">
+            <div id="intro" class="intro-text">
                 <h2>
                     And you may ask yourself, "Well.... how did I get here? <br>
                 <cite>David Byrne</cite>
                 </h2>
                 <article>
                     <p>
-                        I ask myself that same question. In the summer of 2016 I retired from the Army after 21 years of active duty and
-                        26 years of total service. I was not sure what I was going to do next and was unprepared for how difficult a complete 
-                        midlife career tranistion would be. five years later I think I am still plugging away at it. <br>
+                      {{paraOne}}
                     </p>
                     <p>
-                        That first job out of the Army involved working on the Salesforce platform. Nothing too serious but enough to learn what
-                        it was. I had never heard of Salesforce in 44 years. At some point I discovered Trailhead and Vetforce, the Salesforce 
-                        training program for veterans. And I taught myself to code. This website is really for the self taught programmer and the 
-                        career changer. <br>
+                        {{paraTwo}}
                     </p>
                     <p>
                         I think that most develper blogs present a shiny finished package and not the messy never ending process that software development 
@@ -90,5 +85,7 @@ echo "hello";?>
         Quis numquam nostrum repudiandae officiis eum commodi ipsa nobis.
     </div>
 </footer>
+<script src="https://unpkg.com/vue@next" defer></script>
+    <script src="js/intro.js" defer></script>
 </body>
 </html>

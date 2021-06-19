@@ -7,6 +7,8 @@ echo "hello";?>
 <head>
     <meta charset="UTF-8">
     <title>brooksjohnson.io</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
@@ -26,13 +28,13 @@ echo "hello";?>
                <div class="nav-about dropdown">
                    <span class="nav-subject">About Me</span>
                    <div class="dropdown-content">
-                    <a href="#">Hit Me up</a>
+                    <a href="about me.html">My skills and experience</a>
                </div>
                </div>
                <div class="nav-blog dropdown">
                    <span class="nav-subject">Contact</span>
                    <div class="dropdown-content">
-                    <a href="#">About Me</a>
+                    <a href="#">Get in touch</a>
                </div>
                </div>            
                 
@@ -43,151 +45,44 @@ echo "hello";?>
                 <span class="heading-primary-main">Brooks Johnson</span>
                 <span class="heading-primary-sub">Software Engineer</span>
             </h1>
+            <a href="#aboutme">View My Work</a>
         </div>
     </header>
     <main>
+        <a id="aboutme"></a>
         <div class="about">
             <img src="assets/img/headhsot.jpg" alt="my-pic">
             <div class="intro-text">
-                <h2>Hello World</h2>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.
+                <h2>
+                    And you may ask yourself, "Well.... how did I get here? <br>
+                <cite>David Byrne</cite>
+                </h2>
+                <article>
+                    <p>
+                        I ask myself that same question. In the summer of 2016 I retired from the Army after 21 years of active duty and
+                        26 years of total service. I was not sure what I was going to do next and was unprepared for how difficult a complete 
+                        midlife career tranistion would be. five years later I think I am still plugging away at it. <br>
+                    </p>
+                    <p>
+                        That first job out of the Army involved working on the Salesforce platform. Nothing too serious but enough to learn what
+                        it was. I had never heard of Salesforce in 44 years. At some point I discovered Trailhead and Vetforce, the Salesforce 
+                        training program for veterans. And I taught myself to code. This website is really for the self taught programmer and the 
+                        career changer. <br>
+                    </p>
+                    <p>
+                        I think that most develper blogs present a shiny finished package and not the messy never ending process that software development 
+                        is. I wanted a place where I could continue to push myself and share the journey. You can find me a lot on Youtube talking about object oriented
+                        programing and the Apex language. But I am also very interested in JavaScript and its frameworks, full stack web development, Heroku,
+                        Python..... 
+                    </p>
+
+                    
+                </article>
+                
             </div>
         </div>
     </main>
-    <div class="skills">
-        <h2 class="skills-heading">Programming Skills</h2>
-        <div class="skills-card">
-            <h2>Apex</h2>
-            <div class="skills-card--sf">                
-                <div>
-                    <svg height="50" width="50">
-                        <img src="assets/svg-logos/Salesforce.com_logo.svg" alt="salesforce-logo">
-                    </svg>  
-                </div>
-                <div class="donutContainer">
-                    <h2>90%</h2>
-                    <svg width="160" height="160">
-                       
-                         <title>Layer 1</title>
-                         <circle id="circle1" style="stroke-dashoffset: 50;/*  100 of 440 */" class="donut" r="69.85699" cy="81"
-                          cx="81" stroke-width="8" stroke="#009933" fill="none"/>
-                        
-                       </svg>
-                </div>              
-            </div>
-        </div>
-        <div class="skills-card">
-                <h2>JavaScript</h2>
-                <div class="skills-card--js">
-                    <div>
-                        <svg height="50" width="50">
-                            <img src="assets/svg-logos/Unofficial_JavaScript_logo_2.svg" alt="salesforce-logo">
-                        </svg>
-                    </div>
-                    <div class="donutContainer">
-                        <h2>70%</h2>
-                        <svg width="160" height="160">
-                            
-                             <title>Layer 2</title>
-                             <circle id="circle2" style="stroke-dashoffset: 125;/*  100 of 440 */" class="donut" r="69.85699" cy="81"
-                              cx="81" stroke-width="8" stroke="#009933" fill="none"/>                           
-                           </svg>
-                    </div>                   
-                </div>
-        </div>
-       <div class="skills-card">
-           <h2>Python</h2>
-        <div class="skills-card--py">
-            <div>
-                <svg height="50" width="50">
-                    <img src="assets/svg-logos/Python.svg.png" alt="salesforce-logo">
-                </svg>
-            </div>
-            <div>
-                <div class="donutContainer">
-                    <h2>50%</h2>
-                    <svg width="160" height="160">
-                        
-                         <title>Layer 2</title>
-                         <circle id="circle2" style="stroke-dashoffset: 220;/*  100 of 440 */" class="donut" r="69.85699" cy="81"
-                          cx="81" stroke-width="8" stroke="#e6e600" fill="none"/>                           
-                       </svg>
-                </div> 
-            </div>
-           
-        </div>
-       </div>
-        
-        <div class="skills-card">
-            <h2>HTML</h2>
-        <div class="skills-card--html">
-            <div>
-                <svg height="50" width="50">
-                    <img src="assets/svg-logos/html5.png" alt="salesforce-logo">
-                </svg>
-            </div>
-            <div class="donutContainer">
-                <h2>70%</h2>
-                <svg width="160" height="160">
-                    
-                     <title>Layer 2</title>
-                     <circle id="circle2" style="stroke-dashoffset: 50;/*  100 of 440 */" class="donut" r="69.85699" cy="81"
-                      cx="81" stroke-width="8" stroke="#009933" fill="none"/>                           
-                   </svg>
-            </div>  
-           
-        </div>
-        </div>
-        <div class="skills-card">
-            <h2>CSS</h2>
-            <div class=" skills-card--css">
-                <div>
-                    <svg height="50" width="50">
-                        <img src="assets/svg-logos/css.svg" alt="salesforce-logo">
-                    </svg>
-                </div>
-                <div class="donutContainer">
-                    <h2>90%</h2>
-                    <svg width="160" height="160">
-                        
-                         <title>Layer 2</title>
-                         <circle id="circle2" style="stroke-dashoffset: 125;/*  100 of 440 */" class="donut" r="69.85699" cy="81"
-                          cx="81" stroke-width="8" stroke="#e6e600" fill="none"/>                           
-                       </svg>
-                </div>  
-                
-            </div>
-        </div>
-        <div>
-            <div class="skills-card">
-                <div>
-                    <div class=" skills-card--vue">
-                        <svg height="50" width="50">
-                            <img src="assets/svg-logos/vue.png" alt="salesforce-logo">
-                        </svg>
-                    </div>
-                </div>
-                <div class="donutContainer">
-                    <h2>10%</h2>
-                    <svg width="160" height="160">
-                        
-                         <title>Layer 2</title>
-                         <circle id="circle2" style="stroke-dashoffset: 380;/*  100 of 440 */" class="donut" r="69.85699" cy="81"
-                          cx="81" stroke-width="8" stroke="#e60000" fill="none"/>                           
-                       </svg>
-                </div>  
-                
-            </div>
-            
-        </div>
-    </div>
-</div>
+    
 <footer>
     <div class="footer">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam libero, 

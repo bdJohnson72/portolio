@@ -10,9 +10,27 @@ body{
     background-color: var(--pale-blue)
 }
 
+.top-text{
+    padding: 10rem 0;
+    width: 100vw;
+    align-content: center;    
+    
+} 
+   
+
+
+.top-text p{
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    padding: 1rem 5rem;
+    text-indent: 5rem;
+    text-shadow: 1px 1px grey;
+}
+    
+
 .gallery{
    
-    margin: 4rem 1rem 0 1rem;
+    margin: 4rem 1rem 2rem 1rem;
     display: grid;
     grid-gap: .5rem;
     grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
@@ -52,3 +70,23 @@ body{
     opacity: 1;
     
 }
+
+.modal {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .open{
+      opacity: 1;
+  }

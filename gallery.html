@@ -10,37 +10,81 @@
     </head>
     <body>
         <header>
-            <p>The classic, am image gallery that is styled with vanilla JS and CSS. The layout is done with CSS Grid.
-                Notice that it is repsponsive with no media queries.
-        
+            <nav>
+                <div class="nav-bar">
+                   <div class="nav-projects dropdown">
+                       <span class="nav-subject">Projects</span>
+                       <div class="dropdown-content">
+                            <a href="gallery.html">Advanced Image Gallery</a>
+                       </div>
+                   </div>
+                   <div class="nav-about dropdown">
+                       <span class="nav-subject">About Me</span>
+                       <div class="dropdown-content">
+                        <a href="#">Hit Me up</a>
+                   </div>
+                   </div>
+                   <div class="nav-blog dropdown">
+                       <span class="nav-subject">Contact</span>
+                       <div class="dropdown-content">
+                        <a href="#">About Me</a>
+                   </div>
+                   </div>            
+                    
+                </div>
+            </nav>
+            <div class="top-text">
+            <p>
+                I always find the classic image gallery to be one of the best ways to play with layouts and design.
+                This gallery is built using CSS grid for the layout. I think that it gives a great responsive design with out the need
+                for a single media query. The images are random stock photos that are loaded from <a href="https://picsum.photos/">Lorem Picsum</a>
+                Because the pictures are random I also wanted to generate some random contaent for the modals caption area. This is done by using the 
+                fetch api to get random text from <a href="www.baconipson.com">Bacon Ipsum</a>
             </p>
+            </div>
         </header>
-        <div    class="gallery">            
+        <div    class="gallery1 gallery">            
                 <div class="image">                   
                        <img src="https://picsum.photos/300?random=1" alt="">
                        <div class="overlay">
                            <p>over lay text</p>
                        </div>
                  </div>
-                <div class="image"><img src="https://picsum.photos/300?random=2" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=3" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=4" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=5" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=6" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=7" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=8" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=9" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=10" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=11" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=12" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=13" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=14" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=15" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=16" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=17" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=18" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=19" alt=""></div>
-                <div class="image"><img src="https://picsum.photos/300?random=20" alt=""></div>
+                <div class="image"><img src="https://picsum.photos/300?random=2" alt="" title="Lorem Picsum Random2"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=3" alt="" title="Lorem Picsum Random3"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=4" alt="" title="Lorem Picsum Random4"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=5" alt="" title="Lorem Picsum Random5"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=6" alt="" title="Lorem Picsum Random6"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=7" alt="" title="Lorem Picsum Random7"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=8" alt="" title="Lorem Picsum Random8"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=9" alt="" title="Lorem Picsum Random9"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=10" alt="" title="Lorem Picsum Random10"></div>
+        </div>
+        <div class="gallery2 gallery" >       
+                <div class="image"><img src="https://picsum.photos/300?random=11" alt="" title="Lorem Picsum Random11"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=12" alt="" title="Lorem Picsum Random12"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=13" alt="" title="Lorem Picsum Random13"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=14" alt="" title="Lorem Picsum Random14"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=15" alt="" title="Lorem Picsum Random15"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=16" alt="" title="Lorem Picsum Random16"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=17" alt="" title="Lorem Picsum Random17"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=18" alt="" title="Lorem Picsum Random18"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=19" alt="" title="Lorem Picsum Random19"></div>
+                <div class="image"><img src="https://picsum.photos/300?random=20" alt="" title="Lorem Picsum Random20"></div>
+        </div>
+        <div class="modal">
+            <div class="modalInner">
+              <button aria-label="Previous Photo" class="prev">←</button>
+              <figure>
+                <img src="">
+                <figcaption>
+                  <h2></h2>
+                  <p></p>
+                </figcaption>
+              </figure>
+              <button class="next" aria-label="Next Photo">→</button>
+            </div>
+          </div>
         </div>  
         <script src="js/gallery.js"></script>      
     </body>

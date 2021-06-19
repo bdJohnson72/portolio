@@ -5,6 +5,13 @@ echo "hello";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WCMVM5W');</script>
+    <!-- End Google Tag Manager --> 
     <meta charset="UTF-8">
     <title>brooksjohnson.io</title>
 
@@ -15,6 +22,10 @@ echo "hello";?>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCMVM5W"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 <div>
     <header class="header">
         <nav>
@@ -45,7 +56,7 @@ echo "hello";?>
                 <span class="heading-primary-main">Brooks Johnson</span>
                 <span class="heading-primary-sub">Software Engineer</span>
             </h1>
-            <a href="#aboutme">View My Work</a>
+           
         </div>
     </header>
     <main>
@@ -58,22 +69,15 @@ echo "hello";?>
                 <cite>David Byrne</cite>
                 </h2>
                 <article>
-                    <p>
-                      {{paraOne}}
+                    <p v-html='paraOne'>               
                     </p>
-                    <p>
-                        {{paraTwo}}
+                    <p v-html='paraTwo'>                       
                     </p>
-                    <p>
-                        I think that most develper blogs present a shiny finished package and not the messy never ending process that software development 
-                        is. I wanted a place where I could continue to push myself and share the journey. You can find me a lot on Youtube talking about object oriented
-                        programing and the Apex language. But I am also very interested in JavaScript and its frameworks, full stack web development, Heroku,
-                        Python..... 
+                    <p v-html='paraThree'>                       
                     </p>
-
-                    
                 </article>
-                
+               <a id="youtubeButton" href="#">Check Out My Youtube!</a>
+               
             </div>
         </div>
     </main>

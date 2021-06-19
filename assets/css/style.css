@@ -4,7 +4,9 @@
     --midnight-blue: rgb(16, 55, 131);
     --cornflower-blue: #023E8A;
     --pale-blue: rgb(155, 175, 217);
-    --powder-blue: #CAF0F8
+    --powder-blue: #CAF0F8;
+    --cta-yello: #BADA33;
+    
 }
 
 
@@ -31,6 +33,21 @@ body{
     
     box-sizing: border-box;
 }
+
+a{
+    text-decoration: none;
+    color: var(--midnight-blue);
+}
+
+a:active{
+    color: var(--cta-yello);
+}
+
+a:visited{
+    color: var(--pale-blue)
+}
+
+
 .menu-icon{
     color: #efefee;
     font-size: 2.5rem;
@@ -243,6 +260,18 @@ footer{
     margin: 2rem 0 0 0;
 }
 
+#youtubeButton{
+    border: outset solid black;
+    padding: 1rem;
+    background-color: var(--cta-yello);
+    border-radius: 10px;
+    color: black;
+}
+
+#youtubeButton a{
+    color:black
+}
+
 @media only  screen and (min-width: 375px)
 and (max-width: 700px){
 
@@ -283,4 +312,6 @@ and (max-width: 700px){
     .about img {
         display: none;
     }
+
+    
 }

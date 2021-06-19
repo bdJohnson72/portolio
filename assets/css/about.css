@@ -1,0 +1,77 @@
+@import url(style.css);
+
+.skills{
+    margin: 3rem 0;
+    display: grid;
+    width: 100vw;
+    grid-template-areas:
+            "header header header header header header"
+            ". text text text text text"
+            "salesforce js python html css vue";
+}
+
+.skills-intro{
+    grid-column: text;
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+}
+
+
+.skills-heading{
+    padding: 5rem;
+    text-align: center;
+    grid-area: header;
+    font-size: 3rem;
+    color:  var(--midnight-blue);
+    margin: 0 0 2rem 0;
+}
+.skills-card{   
+    position: relative; 
+    outline: 1px solid var(--pale-blue);
+    width: 20rem;
+    min-height: 20rem;
+    border-radius: 3px;
+    background-color: var(--powder-blue);
+    box-shadow: 2px 2px 1px 1px  rgba(195, 188, 188, .9);
+    transition-duration: .5s;
+}
+
+.skills-card:hover{
+    transform: scale(1.1);
+}
+
+.skills-card h2{
+    text-align: center;
+    font-weight: 800;
+}
+.skills-card img{
+    position: absolute;
+    display: block;
+    left: 40%;
+    top: 25%;   
+    padding: 1rem 0;   
+    max-width: 5rem;
+}
+
+.skills-card--sf{
+    grid-area: salesforce;
+}
+
+.skills-card--js{
+    grid-area: js;
+}
+.skills-card--py{
+    grid-area: python;
+}
+.skills-card--html{
+    grid-area: html;
+}
+
+.skills-card--css{
+    grid-area: css;
+}
+
+.skills-card--vue{
+    grid-area: vue;
+}
+

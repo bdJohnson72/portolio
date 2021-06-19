@@ -7,12 +7,13 @@ const regApp = Vue.createApp({
             email: '',
             userName: '',
             password: '',
+            longText: '',
         }
     },
     methods:{
         setFirstName(event){
             this.firstName = event.target.value;
-            console.log(this.firstName);
+            
         },
         isValidName(){
             console.log('connected');
@@ -22,9 +23,15 @@ const regApp = Vue.createApp({
         },
         setEmail(event){
             this.email = event.target.value;
-        }
+        },
         setPhone(event){
             this.phone = event.target.phone;
+        },
+        resetForm(){
+            this.firstName = '';
+            this.lastName = '';
+            this.email = '';
+            this.longText = '';
         }
     }
 })

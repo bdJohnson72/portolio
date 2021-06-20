@@ -294,12 +294,12 @@ footer{
 @media only  screen and (min-width: 375px)
 and (max-width: 700px){
 
-    .skills{
-        grid-template-areas: 
-        "header header header"
-        "salesforce js python "
-        "html css vue";
+    .nav-bar a{
+        font-size: 1.5rem;
+        font-weight: 700;
     }
+
+
 
     .heading-primary-main {
         display: block;

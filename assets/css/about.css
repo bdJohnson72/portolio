@@ -1,7 +1,7 @@
 @import url(style.css);
 
-body{
-    background-color: var(--pale-blue);
+.page-wrapper{
+    position: relative;
 }
 
 .skills{
@@ -79,3 +79,8 @@ body{
     grid-area: vue;
 }
 
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}

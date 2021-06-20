@@ -11,6 +11,9 @@ body{
     color: #333;
     box-sizing: border-box;
 }
+.page-wrapper{
+    position: relative;
+}
 .signInContainer{
     background-color: #efefee;
     padding-top: 10rem;
@@ -104,4 +107,10 @@ body{
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 }

@@ -1,7 +1,8 @@
 const salesForceURL = `<a href='https://salesforce.com' target='_blank'>Salesforce</a>`;
 const trailheadURL = `<a href='https//trailheadsalesforce.com' target='_blank'>Trailhead</a>`;
 const vetForceURL = `<a href='https://veterans.force.com/s/' target='_blank'>Vetforce</a>`
-
+const introText = document.querySelector('#whereIsThatLargeAutomobile');
+console.log(introText);
 const app = Vue.createApp({
     data(){
         return {
@@ -20,6 +21,19 @@ const app = Vue.createApp({
             programing and the Apex language. But I am also very interested in JavaScript and its frameworks, full stack web development, Heroku,
             Python..... </p>`,
         }
-    }
+    },
+    methods:
+        {
+            talkingHeads(){
+                window.open('https://www.youtube.com/watch?v=5IsSpAOD6K8')
+            },
+        }
+
+
 });
-app.mount('#intro')
+app.mount('#intro');
+
+
+
+// event listeners
+introText.addEventListener('mouseover', talkingHeads )

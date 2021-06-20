@@ -211,6 +211,7 @@ a:visited{
 }
 
 .intro-text h2{
+    text-shadow: 0 5px 10px rgba(0,0,0, .2);
     text-align: center;
     color: var(--midnight-blue);
 }

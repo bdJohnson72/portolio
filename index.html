@@ -44,7 +44,7 @@ echo "hello";?>
                     <a id="home" class="nav-subject" href="index.html">Home</a>
                 </div>
                 <div class="nav-projects dropdown">
-                    <a id="projects" href="#">Projects</a>
+                    <a id="projects" href="projects.html">Projects</a>
                 </div>
                 <div class="nav-about dropdown">
                         <a id="skills" class="nav-subject" href="about me.html">My skills and experience</a>
@@ -67,10 +67,13 @@ echo "hello";?>
         <div class="about">
             <img src="assets/img/headhsot.jpg" alt="my-pic">
             <div id="intro" class="intro-text">
-                <h2>
-                    And you may ask yourself, "Well.... how did I get here? <br>
-                    <cite>David Byrne</cite>
-                </h2>
+                <div @click="talkingHeads">
+                    <h2 >
+                        And you may ask yourself, "Well.... how did I get here? <br>
+                        <cite>David Byrne</cite>
+                    </h2>
+                </div>
+
                 <article>
                     <p v-html='paraOne'>
                     </p>

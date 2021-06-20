@@ -1,6 +1,15 @@
 @import 'style.css';
 
 
-main{
+.projects-main{
     height: 95vh;
+    padding: 10rem 0 0 0;
+}
+
+.projects-main h1{
+    display: block;
+    text-align: center;
+    color: var(--midnight-blue);
+    font-size: 3rem;
+    text-shadow: 0 5px 10px rgba(0,0,0, .2);
 }

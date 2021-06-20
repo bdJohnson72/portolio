@@ -5,7 +5,7 @@ body{
 }
 
 .skills{
-    padding: 3rem 0;
+    padding: 3rem 0 0 0;
     display: grid;
     width: 100vw;
     grid-template-areas:

@@ -5,7 +5,7 @@
     --cornflower-blue: #023E8A;
     --pale-blue: rgb(155, 175, 217);
     --powder-blue: #CAF0F8;
-    --cta-yello:#ff0021;
+    --cta-purple:#6c25be;
     
 }
 
@@ -36,11 +36,11 @@ body{
 
 a{
     text-decoration: none;
-    color: var(--midnight-blue);
+    color: black;
 }
 
 a:active{
-    color: var(--cta-yello);
+    color: var(--cta-purple);
 }
 
 a:visited{
@@ -88,8 +88,6 @@ a:visited{
 .dropdown{
     display: inline-block;
     position: relative;
-    
-    
 }
 
 .dropdown-content{
@@ -103,7 +101,10 @@ a:visited{
 
 .dropdown:hover .dropdown-content{
     height: 5rem;
+    min-height: 7rem;
     display: block;
+    border-radius: 1rem;
+    background-color: var(--powder-blue);
 }
 
 .dropdown-content ul{    
@@ -272,26 +273,45 @@ footer{
     margin: 2rem 0 0 0;
 }
 
-#youtubeButton{
-    border: outset solid black;
-    padding: 1rem;
-    background-color: crimson;
-    border-radius: 10px;
-   
+.youtube-button{
+    grid-column: 2 / 4;
 }
 
-#youtubeButton a{
-    background-color: crimson;
-    color:black;
+.project-button{
+    grid-column: 4 /6;
 }
+
+.cta-button{
+    text-align: center;
+    max-width: 21rem;
+    background-color: var(--cta-purple);
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin: 0 0 0 5rem;
+    border-radius: 1rem;
+    transition: all .2s;
+}
+.cta-button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0, .2);
+}
+
+.cta-button:active{
+    transform: translateY(-3px);
+}
+
+
+
+
 
 .footer{
     background-color: var(--powder-blue);   
     font-size: 1.5rem;
     display: grid;
     gap: 1.5rem .5rem;
-    grid-template-columns: repeat(auto-fill, min-max(100px, 1fr));
-    padding: 2rem 0 0 2rem;
+    grid-template-columns: repeat(auto-fit,  minmax(10rem, 1fr));
+    padding: 2rem 0 0 0;
 }
 .linkedIn{
    grid-row: 1;
@@ -317,6 +337,9 @@ footer{
 
 .youtube a {
     color: black;
+}
+.copywrite{
+    grid-row: 2;
 }
 @media only  screen and (min-width: 375px)
 and (max-width: 700px){

@@ -15,8 +15,14 @@ const regApp = Vue.createApp({
             this.firstName = event.target.value;
             
         },
-        isValidName(){
-            console.log('connected');
+        isValidName(event){
+            return  /\w{2,}/.test(event.target.value);
+        },
+        isValidEmail(){
+            return /@/.test(this.email);
+        },
+        isValidPhone(){
+            return /^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/.test(this.phone);
         },
         setLastName(event){
             this.lastName = event.target.value;

@@ -67,6 +67,11 @@ a:visited{
     z-index: 1;
 }
 
+#home{
+    color: white;
+    padding: 0 0 0 3rem;
+}
+
 .nav-bar a {
     display: block;
     color: #141313;

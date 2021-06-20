@@ -1,0 +1,24 @@
+@import 'style.css';
+body{
+    background-color: var(--pale-blue);
+}
+
+.video-intro{
+    padding: 8rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.videos{
+
+    margin: 0 3rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, minmax(50rem, 1fr));
+    justify-content: center;
+    align-content: center;
+}
+
+.video{
+    margin: 1rem;
+}

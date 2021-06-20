@@ -8,31 +8,39 @@
         <link rel="stylesheet" href="assets/css/register.css">
     </head>
     <body>
+    <nav>
         <div class="nav-bar">
+            <div class="home dropdown">
+                <a id="home" class="nav-subject" href="index.html">Home</a>
+            </div>
             <div class="nav-projects dropdown">
                 <span class="nav-subject">Projects</span>
                 <div class="dropdown-content">
                     <ul>
                         <li>
-                         <a href="gallery.html">Advanced Image Gallery</a>
+                            <a href="gallery.html">Advanced Image Gallery</a>
+                        </li>
+                        <li>
+                            <a href="videos.html">Programing Videos</a>
                         </li>
                     </ul>
-                    
+
                 </div>
             </div>
             <div class="nav-about dropdown">
                 <span class="nav-subject">About Me</span>
                 <div class="dropdown-content">
-                 <a href="about me.html">My skills and experience</a>
-            </div>
+                    <a href="about me.html">My skills and experience</a>
+                </div>
             </div>
             <div class="nav-blog dropdown">
                 <span class="nav-subject">Contact</span>
                 <div class="dropdown-content">
-                 <a href="register.html">Get in touch</a>
+                    <a href="register.html">Get in touch</a>
+                </div>
             </div>
-            </div>            
-         </div>       
+        </div>
+    </nav>
         <div id="signup" class="signInContainer">
             <div class="column">
                 <div class="register-header">
@@ -71,7 +79,7 @@
 
                     
                     <div class="formControls">
-                       <input type="submit">
+                       <input type="submit" value="submit">
                        <button v-on:click='resetForm'>Reset Form</button>
                        
                     </div>                   

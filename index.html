@@ -6,53 +6,69 @@ echo "hello";?>
 <html lang="en">
 <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WCMVM5W');</script>
-    <!-- End Google Tag Manager --> 
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WCMVM5W');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <title>brooksjohnson.io</title>
     <script src="https://use.fontawesome.com/338c1fc53d.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCMVM5W"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCMVM5W"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div>
     <header class="header">
         <nav>
             <div class="nav-bar">
-               <div class="nav-projects dropdown">
-                   <span class="nav-subject">Projects</span>
-                   <div class="dropdown-content">
-                       <ul>
-                           <li>
-                            <a href="gallery.html">Advanced Image Gallery</a>
-                           </li>
-                       </ul>
-                       
-                   </div>
-               </div>
-               <div class="nav-about dropdown">
-                   <span class="nav-subject">About Me</span>
-                   <div class="dropdown-content">
-                    <a href="about me.html">My skills and experience</a>
-               </div>
-               </div>
-               <div class="nav-blog dropdown">
-                   <span class="nav-subject">Contact</span>
-                   <div class="dropdown-content">
-                    <a href="register.html">Get in touch</a>
-               </div>
-               </div>            
+                <div class="home dropdown">
+                    <a id="home" class="nav-subject" href="index.html">Home</a>
+                </div>
+                <div class="nav-projects dropdown">
+                    <span class="nav-subject">Projects</span>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>
+                                <a href="gallery.html">Advanced Image Gallery</a>
+                            </li>
+                            <li>
+                                <a href="videos.html">Programing Videos</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="nav-about dropdown">
+                    <span class="nav-subject">About Me</span>
+                    <div class="dropdown-content">
+                        <a href="about me.html">My skills and experience</a>
+                    </div>
+                </div>
+                <div class="nav-blog dropdown">
+                    <span class="nav-subject">Contact</span>
+                    <div class="dropdown-content">
+                        <a href="register.html">Get in touch</a>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="text-box">
@@ -60,7 +76,7 @@ echo "hello";?>
                 <span class="heading-primary-main">Brooks Johnson</span>
                 <span class="heading-primary-sub">Software Engineer</span>
             </h1>
-           
+
         </div>
     </header>
     <main>
@@ -70,42 +86,42 @@ echo "hello";?>
             <div id="intro" class="intro-text">
                 <h2>
                     And you may ask yourself, "Well.... how did I get here? <br>
-                <cite>David Byrne</cite>
+                    <cite>David Byrne</cite>
                 </h2>
                 <article>
-                    <p v-html='paraOne'>               
+                    <p v-html='paraOne'>
                     </p>
-                    <p v-html='paraTwo'>                       
+                    <p v-html='paraTwo'>
                     </p>
-                    <p v-html='paraThree'>                       
+                    <p v-html='paraThree'>
                     </p>
                 </article>
-               <a id="youtubeButton" href="https://www.youtube.com/c/BrooksJohnson_softwareandsalesforce"
-               target="_blank">Check Out My Youtube!</a>
+                <a id="youtubeButton" href="https://www.youtube.com/c/BrooksJohnson_softwareandsalesforce"
+                   target="_blank">Check Out My Youtube!</a>
             </div>
         </div>
     </main>
-    
-<footer>
-    <div class="footer">
-        <div class="linkedIn">
-            <i class="fab fa-linkedin fa-2x" style="color: #0072b1"></i>
-            <a href="https://www.linkedin.com/in/brooksdjohnson" target="_blank">Connect on LinkedIn</a>   
-        </div>       
-        <div class="youtube">
-            <i class="fab fa-youtube-square fa-2x" style="color: #FF0000;"></i>
-            <a href="https://www.youtube.com/c/BrooksJohnson_softwareandsalesforce" >Subscribe on YouTube</a>
+
+    <footer>
+        <div class="footer">
+            <div class="linkedIn">
+                <i class="fab fa-linkedin fa-2x" style="color: #0072b1"></i>
+                <a href="https://www.linkedin.com/in/brooksdjohnson" target="_blank">Connect on LinkedIn</a>
+            </div>
+            <div class="youtube">
+                <i class="fab fa-youtube-square fa-2x" style="color: #FF0000;"></i>
+                <a href="https://www.youtube.com/c/BrooksJohnson_softwareandsalesforce">Subscribe on YouTube</a>
+            </div>
+            <div class="twitter">
+                <i class="fab fa-twitter-square fa-2x" style="color: #1DA1F2;"></i>
+                <a href="https://mobile.twitter.com/BrooksJohnson72" target="_blank">Follow me on Twitter</a>
+            </div>
+            <div class="copywrite">
+                &#169; 2021 Brooks Johnson
+            </div>
         </div>
-        <div class="twitter">
-            <i class="fab fa-twitter-square fa-2x" style="color: #1DA1F2;"></i>
-            <a href="https://mobile.twitter.com/BrooksJohnson72" target="_blank">Follow me on Twitter</a>
-        </div>
-        <div class="copywrite">
-            &#169; 2021 Brooks Johnson
-        </div>
-    </div>
-</footer>
-<script src="https://unpkg.com/vue@next"></script>
+    </footer>
+    <script src="https://unpkg.com/vue@next"></script>
     <script src="js/intro.js" defer></script>
 </body>
 </html>

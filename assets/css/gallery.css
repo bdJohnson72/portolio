@@ -1,55 +1,54 @@
 @import url(style.css);
 
-header p{
+header p {
     padding: 1rem 0 0 0;
     font-size: 2.5rem;
     text-align: center;
 }
 
-body{
+body {
     background-color: var(--pale-blue)
 }
 
-.top-text{
+.top-text {
     padding: 10rem 0;
     width: 100vw;
-    align-content: center;    
-    
-} 
-   
+    align-content: center;
+
+}
 
 
-.top-text p{
+.top-text p {
     text-align: justify;
     text-justify: distribute-all-lines;
     padding: 1rem 5rem;
     text-indent: 5rem;
     text-shadow: 1px 1px grey;
 }
-    
 
-.gallery{
-   
+
+.gallery {
+    position: relative;
     margin: 4rem 1rem 2rem 1rem;
     display: grid;
     grid-gap: .5rem;
-    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     width: 100vw;
     justify-items: center;
 }
 
-.image{
+.image {
     position: relative;
     margin: 1rem 0;
     transition-duration: .5s;
 }
 
-.image:hover{
+.image:hover {
     transform: scale(1.3);
-    z-index: 1;   
+    z-index: 1;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     right: 0;
@@ -60,15 +59,15 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
-    background: rgba(0, 0, 0 ,.60);
+    background: rgba(0, 0, 0, .60);
     transition-property: opacity, scale;
     opacity: 0;
     transition-duration: .5s;
 }
 
-.overlay:hover{
+.overlay:hover {
     opacity: 1;
-    
+
 }
 
 .modal {
@@ -85,8 +84,59 @@ body{
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.5s;
-  }
+}
 
-  .open{
-      opacity: 1;
-  }
+.modalInner {
+    max-width: 50rem;
+    border: 1px solid red;
+    background-color: ivory;
+    display: grid;
+    grid-template-areas: ". . img img img img . ."
+                          ". . img img img img . ."
+                          " prev prev img img img img next next"
+                         " prev prev img img img img  next next"
+                            " . . text text text text . .";
+
+    overflow: auto;
+    color: black;
+    transform: translateY(-100vh);
+
+}
+
+.modal figure {
+    height: 100%;
+    margin: 0;
+    grid-area: img;
+}
+
+.modal img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.modal.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal .prev{
+    grid-area: prev;
+}
+
+.modal .next {
+    grid-area: next;
+}
+
+.modal figcaption {
+    padding: 10px;
+    grid-area: text;
+}
+
+.modal h2 {
+    color: black;
+}
+
+.modal.open .modalInner {
+    transform: translateY(0);
+}

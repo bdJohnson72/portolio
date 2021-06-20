@@ -1,15 +1,103 @@
 @import 'style.css';
 
-
+.page-wrapper{
+    position: relative;
+}
 .projects-main{
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    justify-items: center;
     height: 95vh;
     padding: 10rem 0 0 0;
 }
 
 .projects-main h1{
-    display: block;
+    display: inline-block;
+    grid-column: 1 / -1;
+    margin: 3rem 0 0 0;
+    padding: 0;
     text-align: center;
+    justify-content: end;
     color: var(--midnight-blue);
     font-size: 3rem;
     text-shadow: 0 5px 10px rgba(0,0,0, .2);
 }
+
+.mywork-into{
+    grid-column: 1 / -1;
+    margin: 0 5rem;
+    text-indent: 5rem;
+    font-size: 2rem;
+    text-align: justify;
+
+}
+
+.project-card{
+    position: relative;
+    display: grid;
+    margin: 1rem;
+    border: 1px outset grey;
+    width: 25rem;
+    height: 25rem;
+    background-color: var(--powder-blue);
+}
+
+.project-card h2{
+    margin: 1rem 0 0 0;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--midnight-blue);
+
+}
+
+.project-card p{
+    text-indent: 1rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.card-button{
+    text-align: center;
+    height: 3rem;
+    width: 20rem;
+    padding: 1rem;
+}
+
+.card-button:hover{
+    transform: translateY(-1px);
+}
+.card-button a{
+    background-color: #efefee;
+    border: 2px outset whitesmoke;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    transition-duration: .5s;
+    margin: 0 0 0 6rem;
+}
+
+.card-button a:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+.card-button:active{
+    transform: translateY(-3px);
+}
+
+.card-button a:visited{
+    color: var(--midnight-blue);
+}
+
+
+.footer{
+    margin: 1rem 0 0 0;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+

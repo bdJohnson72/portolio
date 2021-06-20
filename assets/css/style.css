@@ -61,7 +61,6 @@ a:visited{
     display: grid;
     grid-template-areas: "icon nav1 nav2 nav3";
     background-color: var(--cornflower-blue);
-    
     width: 100vw;
     height: 6rem;
     z-index: 1;
@@ -74,60 +73,10 @@ a:visited{
 
 .nav-bar a {
     display: block;
-    color: #141313;
+    color: #efefee;
     font-size: 2rem;
     text-decoration: none;
 }
-
-.nav-subject{
-    display: block;
-    color: #efefee;
-    font-weight: 700;
-    font-size: 2rem;
-}
-.dropdown{
-    display: inline-block;
-    position: relative;
-}
-
-.dropdown-content{
-    display: none;
-    height: 0;
-    position: absolute;
-    min-width: 10rem;
-    z-index: 1;    
-    transition-duration: 1s;
-}
-
-.dropdown:hover .dropdown-content{
-    height: 5rem;
-    min-height: 7rem;
-    display: block;
-    border-radius: 1rem;
-    background-color: var(--powder-blue);
-}
-
-.dropdown-content ul{    
-    list-style: none;
-}
-
-
-
-.nav-blog{
-    grid-area: nav3;
-}
-.nav-projects{
-    grid-area: nav1;
-}
-
-.nav-about{
-    grid-area: nav2;
-}
-
-.hide{
-    display: none;
-}
-
 
 #menu-wrapper{
     background-color: var(--midnight-blue);

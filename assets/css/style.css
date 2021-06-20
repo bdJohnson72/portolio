@@ -5,7 +5,7 @@
     --cornflower-blue: #023E8A;
     --pale-blue: rgb(155, 175, 217);
     --powder-blue: #CAF0F8;
-    --cta-purple:#6c25be;
+    --cta-purple: #b12cf9;
     
 }
 
@@ -30,7 +30,6 @@ body{
     font-size: 1rem;
     line-height: 1.5;
     color: #141313;
-    
     box-sizing: border-box;
 }
 

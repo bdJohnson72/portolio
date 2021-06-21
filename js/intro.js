@@ -19,7 +19,8 @@ const app = Vue.createApp({
             paraThree: `<p>I think that most develper blogs present a shiny finished package and not the messy never ending process that software development 
             is. I wanted a place where I could continue to push myself and share the journey. You can find me a lot on Youtube talking about object oriented
             programing and the Apex language. But I am also very interested in JavaScript and its frameworks, full stack web development, Heroku,
-            Python..... </p>`,
+            Python..... 
+            It is my sincere hope that this site never tops being a work in progress.</p>`,
         }
     },
     methods:

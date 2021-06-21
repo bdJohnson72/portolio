@@ -191,7 +191,7 @@ a:visited{
 .about img{
     border-radius: 20%;
     max-width: 200px;
-    align-self: center;
+    align-self: start;
     justify-self: end;
     padding: 0 1rem;
     grid-column: 1;

@@ -8,36 +8,47 @@ const regApp = Vue.createApp({
             userName: '',
             password: '',
             longText: '',
+            email2: '',
+            invalidFirstName: false,
+            invalidLastName: false,
+            invalidEmail: false,
+            emailsMatch: false,
+            nameMessage: 'Please enter two or more letters',
+            emailMessage: 'Email must include an @ symbol',
+            emailMatch: 'Emails do not match',
         }
     },
     methods:{
-        setFirstName(event){
-            this.firstName = event.target.value;
-            
-        },
+
         isValidName(event){
-            return  /\w{2,}/.test(event.target.value);
+            !/\w{2,}/.test(event.target.value) ? this.invalidFirstName = true :
+                this.invalidFirstName = false;
         },
+
+        isValidLastName(event){
+            !/\w{2,}/.test(event.target.value) ? this.invalidLastName = true :
+                this.invalidLastName = false;
+        },
+
         isValidEmail(){
-            return /@/.test(this.email);
+            !/@/.test(this.email) ? this.invalidEmail = true : this.invalidEmail = false;
         },
         isValidPhone(){
             return /^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/.test(this.phone);
         },
-        setLastName(event){
-            this.lastName = event.target.value;
-        },
-        setEmail(event){
-            this.email = event.target.value;
-        },
-        setPhone(event){
-            this.phone = event.target.phone;
-        },
+
         resetForm(){
             this.firstName = '';
             this.lastName = '';
             this.email = '';
             this.longText = '';
+        },
+        emailConfirmed(){
+           this.email !== this.email2 ? this.emailsMatch = true : this.emailsMatch = false;
+           console.log(this.email);
+           console.log(this.email2);
+           console.log( this.email !== this.email2 ? this.emailsMatch = true : this.emailsMatch = false);
+           console.log(this.emailsMatch);
         }
     }
 })

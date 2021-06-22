@@ -109,6 +109,9 @@ body{
     text-decoration: none;
 }
 
+.isActive{
+    color: crimson;
+}
 .footer{
     position: fixed;
     bottom: 0;

@@ -20,7 +20,7 @@ const app = Vue.createApp({
             is. I wanted a place where I could continue to push myself and share the journey. You can find me a lot on Youtube talking about object oriented
             programing and the Apex language. But I am also very interested in JavaScript and its frameworks, full stack web development, Heroku,
             Python..... 
-            It is my sincere hope that this site never tops being a work in progress.</p>`,
+            It is my sincere hope that this site never stops being a work in progress.</p>`,
         }
     },
     methods:

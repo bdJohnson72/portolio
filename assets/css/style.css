@@ -226,9 +226,11 @@ footer{
 
 .youtube-button{
     grid-column: 2 / 4;
+    grid-row: 2;
 }
 
 .project-button{
+    grid-row: 2;
     grid-column: 4 /6;
 }
 
@@ -326,10 +328,24 @@ and (max-width: 700px){
     .intro-text {        
         font-size: 1.5rem;
         grid-column: 1 / -1;
+        width: 100vw;
     }
 
     .about img {
         display: none;
+    }
+
+    .cta-button{
+        padding: 1rem;
+        max-width: 18rem;
+        margin: 0 .5rem 0 .5rem;
+    }
+
+    .youtube-button{
+        grid-column: 1;
+    }
+    .project-button{
+        grid-column: 2;
     }
 
     
